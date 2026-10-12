@@ -1,0 +1,28 @@
+# ESP-IDF generated
+build/
+build_*/
+managed_components/
+sdkconfig.old
+
+# binaries and build products
+*.bin
+*.elf
+*.map
+*.o
+*.a
+*.d
+*.su
+*.log
+compile_commands.json
+CMakeCache.txt
+CMakeFiles/
+
+# VS Code local settings
+.vscode/
+
+# system files
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.bak
+

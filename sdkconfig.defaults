@@ -1,0 +1,17 @@
+# ===================== Flash =====================
+CONFIG_ESPTOOLPY_FLASHSIZE_16MB=y
+CONFIG_ESPTOOLPY_FLASHSIZE="16MB"
+CONFIG_ESPTOOLPY_FLASHMODE_DIO=y
+
+# ===================== PSRAM（板载八线 PSRAM）=====================
+CONFIG_SPIRAM=y
+CONFIG_SPIRAM_MODE_OCT=y
+
+# ===================== CPU / 系统 =====================
+CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ_240=y
+CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ=240
+CONFIG_FREERTOS_HZ=100
+
+# ===================== 任务栈 =====================
+# LVGL 需要较大栈，main 任务默认 3584 太小
+CONFIG_ESP_MAIN_TASK_STACK_SIZE=8192
